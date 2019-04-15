@@ -85,7 +85,7 @@ function vec_crossproduct(v1, v2)
 end
 
 function vecangle(v1, v2)
-	return (math.deg(math.acos(vec_dotproduct(v1, v2)) / (vecnorm(v1) * vecnorm(v2))))
+	return (math.deg(math.acos(vec_dotproduct(v1, v2)) / (v1:norm() * v2:norm())))
 end
 
 function vecrotx(v1, angle)
