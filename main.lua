@@ -5,9 +5,13 @@ require 'vector3'
 v1 = vecdef(42, 0, 0)
 io.write("v1: ")
 v1:disp()
+print("norm = " .. v1:norm())
+print()
 v2 = vecdef(0, 21, 0)
 io.write("v2: ")
 v2:disp()
+print("norm = " .. v2:norm())
+print()
 
 v = v1 + v2
 io.write("v1 + v2 = ")

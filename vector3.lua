@@ -2,13 +2,13 @@
 
 function vecdef(x, y, z)
 	local v = {
-		x = x or 0,
-		y = y or 0,
-		z = z or 0
+		x = x or 0.0,
+		y = y or 0.0,
+		z = z or 0.0
 	}
 
 	function v:norm()
-		return (math.sqrt(math.pow(self.x, 2) + math.pow(self.y, 2) + math.pow(self.z, 2)))
+		return (math.sqrt(self.x ^ 2.0 + self.y ^ 2.0 + self.z ^ 2.0))
 	end
 
 	function v:rev()
